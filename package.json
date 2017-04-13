@@ -9,6 +9,10 @@
   "scripts": {
     "build": "./node_modules/.bin/node-sass ./scss/*.scss -o css --output-style compressed --include-path node_modules"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuel-bieh/layout.git"
+  },
   "dependencies": {
     "@wiremore/css-grid": "^1.1.0",
     "normalize-scss": "^6.0.0"
