@@ -1,33 +1,54 @@
+@import "../../base/config/colors";
+@import "../../base/mixins/clearfix";
+
 header {
 
-    @at-root {
-
-        html {
-            overflow-x: hidden;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-    }
+    // @at-root {
+    //
+    //     html {
+    //         overflow-x: hidden;
+    //     }
+    //
+    //     body {
+    //         overflow-x: hidden;
+    //     }
+    //
+    // }
 
     color: $color-section-04-fg;
-    padding: 12px 0;
+    background: $color-section-04-bg;
+    margin-bottom: 24px;
+    padding: 12px 0 0 0;
     position: relative;
     width: 100%;
 
     &:before {
         content: "";
-        background: $color-section-04-bg;
         display: block;
         position: absolute;
-        top: 0;
+        bottom: -42px;
         left: 0;
         right: 0;
-        transform: skewY(-1.25deg) translateY(-32px) scale(1.25);
-        bottom: 0;
+        transform: skewY(-1.25deg);
+        height: 84px;
+        background: $color-section-04-bg;
     }
+
+    > :last-child {
+        margin-bottom: -40px;
+    }
+
+    // &:before {
+    //     content: "";
+    //     background: $color-section-04-bg;
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     transform: skewY(-1.25deg) translateY(-32px) scale(1.25);
+    //     bottom: 0;
+    // }
 
     hgroup {
         margin-bottom: -16px;

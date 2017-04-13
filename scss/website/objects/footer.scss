@@ -1,3 +1,6 @@
+@import "../../base/config/colors";
+@import "../../base/mixins/clearfix";
+
 footer {
 
     // @at-root {
@@ -15,6 +18,7 @@ footer {
     background: $color-section-03-bg;
     padding-bottom: 16px;
     // padding: 16px;
+    margin-top: 16px;
     vertical-align: middle;
     position: relative;
 
@@ -39,6 +43,10 @@ footer {
         transform: skewY(-1.25deg);
         height: 84px;
         background: $color-section-03-bg;
+    }
+
+    > :first-child {
+        margin-top: -24px;
     }
 
     a {

@@ -7,7 +7,7 @@
   "author": "Manuel Bieh <node@manuelbieh.de> (https://github.com/manuelbieh)",
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/node-sass ./scss/*.scss -o css --output-style compressed --include-path node_modules"
+    "build": "./node_modules/.bin/node-sass ./scss/ -o css --output-style compressed --include-path node_modules"
   },
   "repository": {
     "type": "git",
