@@ -3,6 +3,7 @@
     section {
         border: 1px solid #BBB;
         box-shadow: 0 0 10px 2px #CCC;
+        margin: 50px auto;
     }
 
 }
@@ -27,7 +28,7 @@ section {
     box-sizing: border-box;
     // box-shadow: 0 0 10px 2px #CCC;
     display: block;
-    margin: 50px auto;
+    margin: 0 auto;
     page-break-after: always;
     position: relative;
     padding-top: 2em;

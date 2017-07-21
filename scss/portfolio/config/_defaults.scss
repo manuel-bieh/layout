@@ -18,13 +18,25 @@ td, th {
 }
 
 blockquote {
+    clear: both;
     font-style: italic;
     font-size: 115%;
     text-align: justify;
+    margin: 8px 16px 24px 16px;
+    width: 85%;
 }
 
-blockquote + p {
+blockquote cite {
     color: #666;
+    font-style: normal;
+    margin-top: 8px;
+    &:before {
+        content: "– ";
+    }
+}
+
+blockquote:nth-child(2n) {
+    float: right;
 }
 
 .right {

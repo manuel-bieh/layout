@@ -30,11 +30,13 @@ header {
         left: 0;
         right: 0;
         transform: skewY(-1.25deg);
-        height: 84px;
+        min-height: 84px;
+        top: 0;
         background: $color-section-04-bg;
     }
 
-    > :last-child {
+    > .grid .row:last-child {
+        // eliminate row margin if a grid is used inside of a header
         margin-bottom: -40px;
     }
 
