@@ -1,0 +1,35 @@
+
+#title {
+    // padding-top: 4px;
+    padding: 4px;
+}
+
+#title img {
+    width: 95px;
+    height: 95px;
+    margin-bottom: 3px;
+}
+
+#title h1 {
+    bottom: -28px;
+    font-size: 52px;
+    line-height: 16pt;
+    position: absolute;
+    right: 24px;
+    z-index: 1;
+}
+
+#title h1:after, #title h1:before {
+    background: transparent;
+    content: "";
+    border: 0;
+    display: none;
+}
+
+td {
+    padding: 5px;
+}
+
+tr:nth-child(2n) td {
+    background: #f3f3f3;
+}
